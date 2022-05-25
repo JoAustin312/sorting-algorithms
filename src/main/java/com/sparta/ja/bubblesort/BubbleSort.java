@@ -7,7 +7,7 @@ public class BubbleSort
 
     }
 
-    public static int[] bubbleSort(int[] arr){
+    public static void bubbleSort(int[] arr){
         int n = arr.length;
         int tempNum = 0;
         for (int i = 0; i < n; i++){
@@ -19,6 +19,5 @@ public class BubbleSort
                 }
             }
         }
-        return arr;
     }
 }

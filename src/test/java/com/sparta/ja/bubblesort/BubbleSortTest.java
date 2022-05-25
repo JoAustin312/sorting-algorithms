@@ -12,6 +12,6 @@ public class BubbleSortTest
         int[] expected = {2,6,10,34,48,52,94,152,285};
         int[] actual = {2,52,94,6,34,285,10,48,152};
         BubbleSort.bubbleSort(actual);
-        Assertions.assertArrayEquals(expected, BubbleSort.bubbleSort(expected));
+        Assertions.assertArrayEquals(expected, actual);
     }
 }

@@ -1,5 +1,7 @@
 package com.sparta.ja.mergearray;
 
+import com.sparta.ja.bubblesort.BubbleSort;
+
 import java.util.Arrays;
 
 public class MergeArray {
@@ -36,8 +38,8 @@ public class MergeArray {
             }
             return mergedArray;
         } else {
-            Arrays.sort(firstArray); //sort arrays if given unsorted and calls method recursively
-            Arrays.sort(secondArray);
+            BubbleSort.bubbleSort(firstArray); //sort arrays if given unsorted and calls method recursively
+            BubbleSort.bubbleSort(secondArray);
             return mergeArrays(firstArray, secondArray);
         }
     }
